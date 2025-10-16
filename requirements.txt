@@ -1,0 +1,4 @@
+ipykernel
+mdformat
+numpy
+matplotlib
