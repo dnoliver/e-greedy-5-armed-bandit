@@ -10,18 +10,15 @@ parameters
 
 ## Problem
 
-Implement a 5 armed bandit problem with greedy and e-greedy action selection
-algorithms. Compare the results of e-greedy action selection method (e=0.4) with the greedy one.
-Which one works better over 100 time-steps in 200 runs? You can choose any distribution/values
-for your reward function and/or other parameters.
+Implement a 5 armed bandit problem with greedy and e-greedy action selection algorithms. Compare the results of e-greedy
+action selection method (e=0.4) with the greedy one. Which one works better over 100 time-steps in 200 runs? You can
+choose any distribution/values for your reward function and/or other parameters.
 
-Section 2.3 of our book is an example for one 10 armed testbed. One way to show the
-performance of e greedy method vs the greedy method is by producing one of the graphs in Figure
-2.2. However you may explain/show or compare the performance of two approaches in different
-ways.
+Section 2.3 of our book is an example for one 10 armed testbed. One way to show the performance of e greedy method vs
+the greedy method is by producing one of the graphs in Figure 2.2. However you may explain/show or compare the
+performance of two approaches in different ways.
 
-The following algorithm is an example for e-greedy action selection in k armed bandit problem
-(section 2.4).
+The following algorithm is an example for e-greedy action selection in k armed bandit problem (section 2.4).
 
 ```latex
 # A simple bandit algorithm
