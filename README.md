@@ -1,24 +1,17 @@
-# Programming Assignment
+# Problem Description
 
-## Instructions
+This project implements a 5-armed bandit environment and compares two action-selection strategies:
+- Greedy
+- ε-Greedy (with ε = 0.4)
 
-You can use any programming languages. You may work in a group of two. It’s due is October 30 at the beginning of the
-class.
+The goal is to evaluate which method performs better over 100 time steps across 200 independent runs.
+You may define any reward distributions or parameters for the bandit arms.
 
-You have to submit a hardcopy of your program, the results with a detailed explanation including all the selected
-parameters
+For background, refer to Section 2.3 of Sutton & Barto’s Reinforcement Learning (10-armed testbed example).
+A common way to visualize performance is by reproducing one of the plots from Figure 2.2, but any clear comparison—plots, tables, or qualitative explanation—is acceptable.
 
-## Problem
+Below is the ε-greedy action-selection algorithm for the k-armed bandit problem (Section 2.4), which serves as the basis for this implementation.
 
-Implement a 5 armed bandit problem with greedy and e-greedy action selection algorithms. Compare the results of e-greedy
-action selection method (e=0.4) with the greedy one. Which one works better over 100 time-steps in 200 runs? You can
-choose any distribution/values for your reward function and/or other parameters.
-
-Section 2.3 of our book is an example for one 10 armed testbed. One way to show the performance of e greedy method vs
-the greedy method is by producing one of the graphs in Figure 2.2. However you may explain/show or compare the
-performance of two approaches in different ways.
-
-The following algorithm is an example for e-greedy action selection in k armed bandit problem (section 2.4).
 
 ```latex
 # A simple bandit algorithm
@@ -35,7 +28,3 @@ Repeat forever:
     N(A) <- N(A) + 1
     Q(A) <- Q(A) + 1/N(A)[R - Q(A)]
 ```
-
-## Output
-
-Code, results, and the detailed explanation of your approach.
